@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "UploadDocument";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-controller="Journals" asp-action="UploadDocument" method="post"
+      enctype="multipart/form-data">
+    
+    <input type="file"   name="file" />
+    <button class="btn btn-primary" type="submit">Upload File</button>
+</form>
